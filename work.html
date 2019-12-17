@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</head>
+<body>
+
+<div id="navbar">
+  <div class="list">
+    <a id="logo" href="#home"><i class="far fa-smile" style="font-size: 35px;"></i><h3 id="logo-text">Mailchimp</h3></a>
+    <ul id="nav-list" class="nav">
+      <li class="one"><a href="#home">Home</a></li>
+      <li class="two"><a href="#about">About</a></li>
+      <li class="three"><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="burger"class="burger"><i class="fas fa-bars"></i></button>
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul id="nav-mobile" class="nav-mobile">
+    <li class="one"><a href="#home">Home</a></li>
+    <li class="two"><a href="#about">About</a></li>
+    <li class="three"><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="overlay" id="overlay">
+</div>
+
+
+<section class="landing blue" id="home">
+  <div class="intro">
+    <h1>Mailchimp</h1>
+    <h2>Reach the audience you deserve with bespoke design solutions.</h2>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-title">
+    <div class="about-title-header">
+      <h2>What we offer</h2>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="about-content-panel">
+      <div class="repeater rep1">
+        <i class="fas fa-pencil-alt"></i>
+        <h3>Design.</h3>
+        <p>Bespoke design for your site.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="repeater rep2">
+        <i class="fas fa-fingerprint"></i>
+        <h3>Identity.</h3>
+        <p>A brand identity to help you stand out.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="repeater rep3">
+        <i class="fas fa-search-plus"></i>
+        <h3>Visibility.</h3>
+        <p>Solutions optimized for search engines.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" language="javascript">
+         $(function () {
+             var $win = $(window);
+
+             $win.scroll(function () {
+                 if ($win.scrollTop() == 0)
+                     document.getElementById('navbar').style.background = "transparent";
+                 else if ($win.height() + $win.scrollTop()
+                                == $(document).height()) {
+                 }
+             });
+         });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px !important;
+  background-color: #141f34;
+  color: white;
+
+  font-family: 'PT Serif', serif;
+
+  overflow-x:hidden;
+
+}
+
+#navbar {
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition:0.3s;
+  font-family: 'Open Sans', sans-serif;
+  z-index:5000;
+}
+
+#navbar .list>ul{
+  list-style: none;
+}
+
+#navbar .list>ul>li>a {
+  float: left;
+  display: block;
+  vertical-align: middle;
+  line-height: 35px;
+  color: inherit;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 40px;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+.nav{
+  height: 5vh;
+  padding-left: 0;
+  margin-left: 5vw;
+}
+
+#logo{
+  float: left;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.list{
+ margin-left: 12vw;
+}
+
+.about{
+  height: 70vh;
+  background-color: #141f34;
+}
+
+.info { height: 70vh;}
+.info-container{
+  width: 60%;
+  margin: 0 auto;
+}
+.text{width: 40%; display: inline-block;}
+.text.text-1{float: left;}
+.text.text-2{float:right;}
+
+.about-title{height: 30vh;}
+.about-title-header{margin: 0px auto;width: 50vw;
+padding-top: 10vh; padding-bottom: 10vh;text-align: center;}
+.about-title-header h2{font-size: 45px;}
+.about-content{height:70vh;padding-top:5vh;}
+.about-content-panel{margin: 0px auto;width: 80vw;height: 100%;justify-content: center;display: flex; flex-wrap:wrap;}
+.repeater{width: 25%;height: 14vh;display:block;text-align:center;font-size:14px;}
+.repeater h3{font-weight: normal;}
+.repeater a{color: #007c89;text-decoration: none; font-weight: bold;  font-family: 'Open Sans', sans-serif;transition:0.3s;}
+.repeater a:hover{text-decoration: underline;color:#004f59;}
+.repeater i{display:block;font-size:50px;line-height:70px;color:#904575;}
+
+
+a{ display:inline-block;}
+
+ul li {
+  display: inline;
+}
+
+.landing{
+  height: 100vh;
+  background-color: #141f34;
+  overflow:hidden;
+  background-image: url('sunset-02.png');
+  background-size: cover;
+  position: bottom;
+}
+
+#nav-list{
+  transition: 0.3s;
+}
+#logo-text{
+  transition: 0.3s;
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 5px;
+}
+
+h1{
+  font-size: 85px;
+  color: #904575;
+  margin-bottom:5px;
+}
+.intro h2{
+  font-size:35px;
+  width:40vw;
+  margin-top:5px;
+  font-weight:normal;
+  color: white;
+}
+
+h3{
+  display: inline;
+}
+
+.footer{
+width: 100vw;
+height: 100vh;
+background-image: url('sunset-invert-03.png');
+background-size: cover;
+background-position: top;
+}
+
+.intro{
+  padding-top: 30vh;
+  padding-left: 15vw;
+}
+
+.list:hover  #nav-list{
+  opacity: 1 !important;
+}
+.list:hover #logo-text{
+  opacity: 1 !important;
+}
+#navbar:hover{background-color:white!important;color: black !important;}
+
+.fa-smile{transition:0.5s;}
+
+.fa-smile:hover{transform: rotate(360deg);}
+
+.burger{display:none;}
+.mobile-menu{display:none;}
+.overlay{display:none;}
+
+.blue{background-color:#C5DBF2;}
+.white{background-color:white!important;color:black !important;}
+.black{background-color: transparent !important; color: white !important;}
+
+@media only screen and (max-width: 600px) {
+.repeater{ width: 80%;height:auto;}
+.intro{padding-top:10vh;padding-left:5vw;}
+.intro h2{width:80vw;}
+.list{margin-left: 5vw;}
+#nav-list{display:none;}
+.burger{display:inline-block;float:right;border:none;font-size:35px;background-color:transparent;margin-right:10px;}
+.mobile-menu{display:block;height:100vh;width:80vw;background-color:white;right:-200vw;transition:0.3s;z-index:1000;position:fixed;opacity:1;}
+.active{right:0;}
+.on{display:block;}
+.white{background-color:white!important;}
+.nav-mobile{font-size:35px;padding-top:20vh;}
+.nav-mobile li a{display:block;text-align:center;text-decoration:none;color:black;margin-top:20px;}
+.burger-close{background-color:transparent;color:black;font-size:35px;border:none;}
+#navbar{padding-top:15px;padding-bottom:15px;}
+.about{overflow:auto;padding-bottom:35px;}
+.overlay{background-color:black;opacity:0.6;z-index:200;width:100vw;height:100vh;position:fixed;}
+}
+
+@media only screen and (min-width: 1380px) {
+.landing{height:100vh;}
+.intro{padding-top:15vh;}
+}
