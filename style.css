@@ -93,7 +93,7 @@ padding-top: 10vh; padding-bottom: 10vh;text-align: center;}
 .repeater i{display:block;font-size:50px;line-height:70px;color:#904575;}
 
 
-a{ display:inline-block;}
+a{ display:inline-block;color: white;}
 
 ul li {
   display: inline;
@@ -103,7 +103,7 @@ ul li {
   height: 100vh;
   background-color: #141f34;
   overflow:hidden;
-  background-image: url('sunset-02.png');
+  background-image: url('Sunset-02.png');
   background-size: cover;
   position: bottom;
 }
@@ -137,7 +137,7 @@ h3{
 .footer{
 width: 100vw;
 height: 100vh;
-background-image: url('sunset-invert-03.png');
+background-image: url('Sunset-invert-03.png');
 background-size: cover;
 background-position: top;
 }
