@@ -1,128 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-<script src="scripts.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+  <body>
 
-</head>
-<body>
+    <div id="root"></div>
 
-<div id="navbar">
-  <div class="list">
-    <a id="logo" href="#home"><i class="far fa-smile" style="font-size: 35px;"></i><h3 id="logo-text">  Practice Room</h3></a>
-    <ul id="nav-list" class="nav">
-      <li class="one"><a href="#home">Home</a></li>
-      <li class="two"><a href="#about">About</a></li>
-      <li class="three"><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="burger"class="burger"><i class="fas fa-bars"></i></button>
-  </div>
-</div>
-
-<div class="mobile-menu" id="mobile-menu">
-  <ul id="nav-mobile" class="nav-mobile">
-    <li class="one"><a href="#home">Home</a></li>
-    <li class="two"><a href="#about">About</a></li>
-    <li class="three"><a href="#contact">Contact</a></li>
-  </ul>
-</div>
-
-<div class="overlay" id="overlay">
-</div>
-
-
-<section class="landing" id="home">
-  <div class="intro">
-    <h1>Home Page</h1>
-    <h2>Create some subpages with JavaScript / PHP / Python(?) projects.</h2>
-    <h3>- Could make an SQL database and create a custom query filter?<br />
-    e.g. car sale site that narrows search results by model / make / colour etc.</h3>
-    <h3 style="display: block;">- Could see if we can make it in Python (<a href="https://www.w3schools.com/python/python_mysql_select.asp">example on W3Schools</a>).</h3>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="about-title">
-    <div class="about-title-header">
-      <h2 style="color: white">What we offer</h2>
-    </div>
-  </div>
-  <div class="about-content">
-    <div class="about-content-panel">
-      <div class="repeater rep1">
-        <i class="fas fa-pencil-alt"></i>
-        <h3 style="color: white">Design.</h3>
-        <p style="color: white">Bespoke design for your site.</p>
-        <a href="work.html">Learn more</a>
-      </div>
-      <div class="repeater rep2">
-        <i class="fas fa-fingerprint"></i>
-        <h3 style="color: white">Identity.</h3>
-        <p style="color: white">A brand identity to help you stand out.</p>
-        <a href="work.html">Learn more</a>
-      </div>
-      <div class="repeater rep3">
-        <i class="fas fa-search-plus"></i>
-        <h3 style="color: white">Visibility.</h3>
-        <p style="color: white">Solutions optimized for search engines.</p>
-        <a href="work.html">Learn more</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="info">
-<div class="info-container">
-    <div class="info-1">
-      <img src="Laptop-01.png">
-      <div class="text text-1"><h2>Portable solutions.</h2>
-      <p>Look no further.</p></div>
-    </div>
-    <div class="info-2">
-      <div class="text text-2"><h2>Enjoy the journey.</h2>
-      <p>Reach the destination in style.</p></div>
-      <img src="Map.png">
-    </div>
-
-</div>
-</section>
-<section class="footer">
-
-</div>
-
-
-<script type="text/javascript" language="javascript">
-var $win = $(window);
-
-$win.scroll(function () {
-    if ($win.scrollTop() == 0)
-        document.getElementById('navbar').classList.toggle('black');
-    else if ($win.height() + $win.scrollTop()
-                   == $(document).height()) {
-    }
-});
-
-</script>
-<script>
-document.getElementById('burger').addEventListener('click',function() {
-  document.getElementById('mobile-menu').classList.toggle('active');
-  document.getElementById('overlay').classList.toggle('on');
-  document.getElementById('navbar').classList.toggle('white');
-
-
-})
-
-document.getElementById('overlay').addEventListener('click',function() {
-  document.getElementById('mobile-menu').classList.remove('active');
-  document.getElementById('overlay').classList.remove('on');
-  document.getElementById('navbar').classList.toggle('white');
-})
-
-</script>
-</body>
+  </body>
 </html>
