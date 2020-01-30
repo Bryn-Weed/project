@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+function getFullName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Bryn',
+  lastName: 'Weed'
+}
+
 class Home extends Component {
   render() {
     return (
@@ -9,6 +18,12 @@ class Home extends Component {
 <div>
   <section>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <section>
+      <div className="jumbotron text-center">
+        <h1 className="animated-reveal animate">{getFullName(user)}'s first React Page</h1>
+        <p className="animated-reveal animate">Resize this responsive page to see the effect!</p>
+      </div>
+    </section>
     <div className="container">
       <div className="row" style={{paddingTop: "3rem", paddingBottom: "3rem"}}>
         <div className="col-sm-4" id="info">
