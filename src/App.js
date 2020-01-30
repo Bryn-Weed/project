@@ -13,19 +13,19 @@ class Home extends Component {
       <div className="row" style={{paddingTop: "3rem", paddingBottom: "3rem"}}>
         <div className="col-sm-4" id="info">
           <span className="glyphicon glyphicon-asterisk" aria-hidden="true" id="icon"></span>
-          <h3>Column 1</h3>
+          <h3>1</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div className="col-sm-4" id="info">
           <span className="glyphicon glyphicon-search" aria-hidden="true" id="icon"></span>
-          <h3>Column 2</h3>
+          <h3>2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div className="col-sm-4" id="info">
           <span className="glyphicon glyphicon-plus" aria-hidden="true" id="icon"></span>
-          <h3>Column 3</h3>
+          <h3>3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
