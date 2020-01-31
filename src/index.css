@@ -27,29 +27,123 @@ code {
     monospace;
 }
 
-.navbar{
-  background-color: #333;
-  width: 100%;
-  top: 0px;
-  position: fixed !important;
-  margin-bottom: 0 !important;
-  overflow: hidden;
-  z-index: 5;
-}
-
-.navbar a{
-  display: block;
-  float: left;
-  color: #6A84D8;
-  transition: color .5s;
-  text-decoration: none;
-  text-align: center;
-  padding: 5px;
-  margin-right: 10px;
-}
-
-.navbar a:hover{
+#navbar {
+  background-color: transparent;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition:0.3s;
+  font-family: 'Open Sans', sans-serif;
+  z-index:5000;
+}
+
+#navbar .list>ul{
+  list-style: none;
+}
+
+#navbar .list>ul>li>a {
+  float: left;
+  display: block;
+  vertical-align: middle;
+  line-height: 35px;
+  color: inherit;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 40px;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+.nav{
+  height: 5vh;
+  padding-left: 0;
+  margin-left: 5vw;
+  display: block !important;
+}
+
+#logo{
+  float: left;
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.list{
+ margin-left: 14vw;
+}
+
+
+#nav-list{
+  transition: 0.3s;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+#logo-text{
+  transition: 0.3s;
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 5px;
+  display: inline !important;
+}
+
+#navbar:hover{background-color:white!important;color: black !important;}
+
+.list:hover  #nav-list{
+  opacity: 1 !important;
+}
+.list:hover #logo-text{
+  opacity: 1 !important;
+}
+
+.fa-smile{transition:0.5s;}
+
+.fa-smile:hover{transform: rotate(360deg);}
+
+.burger{display:none;}
+.mobile-menu{display:none;}
+.overlay{display:none;}
+
+
+
+.blue{background-color:#C5DBF2;}
+.white{background-color:white!important;color:black !important;}
+.black{background-color: transparent !important; color: white !important;}
+
+@media only screen and (max-width: 600px) {
+.repeater{ width: 80%;height:auto;}
+.intro{padding-top:10vh;padding-left:5vw !important}
+.intro h2{width:80vw;}
+.list{margin-left: 5vw;}
+#nav-list{display:none !important;}
+.burger{display:inline-block;float:right;border:none;font-size:35px;background-color:transparent;margin-right:10px;}
+.mobile-menu{display:block;height:100vh;width:80vw;background-color:white;right:-200vw;transition:0.3s;z-index:1000;position:fixed;opacity:1;}
+.active{right:0;}
+.on{display:block;}
+.white{background-color:white!important;}
+.nav-mobile{font-size:35px;padding-top:20vh;list-style-type:none;}
+.nav-mobile li a{display:block;text-align:center;text-decoration:none;color:black;margin-top:20px;}
+.burger-close{background-color:transparent;color:black;font-size:35px;border:none;}
+#navbar{padding-top:15px;padding-bottom:15px;}
+.overlay{background-color:black;opacity:0.6;z-index:200;width:100vw;height:100vh;position:fixed;}
+.jumbotron{background-size: cover !important;}
+}
+
+@media only screen and (min-width: 1380px) {
+.intro{padding-top:15vh;}
 }
 
 .login{
@@ -57,12 +151,30 @@ code {
 }
 
 .jumbotron {
-  padding: 8rem 2rem !important;
+  height: 100vh;
   background-color: #183648 !important;
   color: white !important;
-  background-image: url('./banner.jpg');
+  background-image: url('./banner.png');
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.intro{
+  padding-top: 30vh;
+  padding-left: 15vw;
+}
+
+.intro h1{
+  font-size: 85px;
+}
+
+.intro h2{
+  font-size:35px;
+  width:40vw;
+  margin-top:5px;
+  font-weight:normal;
+  color: white;
 }
 
 .animated-reveal {
@@ -174,7 +286,13 @@ code {
   background-image: url("structure.PNG");
   background-repeat: no-repeat;
   background-color: #282C34;
-  background-position: center;
+  overflow: visible;
+}
+
+#nav-code-display {
+  background-image: url("nav.PNG");
+  background-repeat: no-repeat;
+  background-color: #282C34;
   overflow: visible;
 }
 

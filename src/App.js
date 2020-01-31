@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function getFullName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
-
-const user = {
-  firstName: 'Bryn',
-  lastName: 'Weed'
-}
 
 class Home extends Component {
   render() {
@@ -19,12 +11,14 @@ class Home extends Component {
   <section>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <section>
-      <div className="jumbotron text-center">
-        <h1 className="animated-reveal animate">{getFullName(user)}'s first React Page</h1>
-        <p className="animated-reveal animate">Resize this responsive page to see the effect!</p>
+      <div className="jumbotron">
+        <div className="intro">
+          <h1 className="animated-reveal animate">Website</h1>
+          <h2 className="animated-reveal animate">Resize this responsive page to see the effect!</h2>
+        </div>
       </div>
     </section>
-    <div className="container">
+    <div className="container" id="about">
       <div className="row" style={{paddingTop: "3rem", paddingBottom: "3rem"}}>
         <div className="col-sm-4" id="info">
           <span className="glyphicon glyphicon-asterisk" aria-hidden="true" id="icon"></span>
@@ -48,7 +42,7 @@ class Home extends Component {
     </div>
   </section>
   <section>
-    <div className="container">
+    <div className="container" id="info">
       <div className="row">
         <div className="col-sm-6" id="code-display">
         </div>
@@ -65,6 +59,17 @@ class Home extends Component {
           <h2>The header banner, main content, and footer are now three separate js pages all rendered separately, so we can re-use the header and footer when we have multiple pages.</h2>
         </div>
         <div className="col-sm-6" id="structure-display">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div className="container" style={{marginTop: "20px"}}>
+      <div className="row">
+        <div className="col-sm-6" style={{padding: "5rem"}}>
+          <h2>Added jQuery to NPM and used it to create scripts for the navbar</h2>
+        </div>
+        <div className="col-sm-6" id="nav-code-display">
         </div>
       </div>
     </div>

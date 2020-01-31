@@ -4,6 +4,7 @@ import Header from './Header.js';
 import Home from './App.js';
 import Footer from './Footer.js';
 import Login from './Login.js';
+import './Script.js';
 
 
 ReactDOM.render(<Header />, document.getElementById('header'));
