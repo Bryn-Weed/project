@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import fire_base from './config/firebase';
-import footer from './Footer.js';
-import header from './Header.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import Header from './Header';
+import Footer from './Footer';
+
 
 class Home extends React.Component{
 
   render(){
     return(
 
-        <div>
+
+      <div>
+        <Header/>
   <section>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <section>
@@ -75,11 +80,12 @@ class Home extends React.Component{
       </div>
     </div>
   </section>
+  <Footer/>
 </div>
 
     )
   }
 }
 
-export default Home;
 
+export default Home;

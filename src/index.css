@@ -276,21 +276,18 @@ code {
 }
 
 #code-display {
-  background-image: url("code.PNG");
   background-repeat: no-repeat;
   background-color: #282C34;
   background-position: center;
 }
 
 #structure-display {
-  background-image: url("structure.PNG");
   background-repeat: no-repeat;
   background-color: #282C34;
   overflow: visible;
 }
 
 #nav-code-display {
-  background-image: url("nav.PNG");
   background-repeat: no-repeat;
   background-color: #282C34;
   overflow: visible;
@@ -305,7 +302,9 @@ code {
   background-color: #282C34;
   margin-top: 20px;
   z-index: 1;
+  text-align: center;
 }
+
 
 #footer {
   text-align: center;
@@ -318,4 +317,10 @@ code {
 #footer:hover {
   font-size: 25px;
   color: white;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+  padding-top: 20rem;
 }

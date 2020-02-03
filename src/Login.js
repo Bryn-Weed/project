@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import fire_base from './config/firebase';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 class Login extends React.Component{
 
@@ -35,20 +37,24 @@ class Login extends React.Component{
   render(){
     return(
         <div style={{ textAlign : 'center' }}>
-          <div>
-            <div>Email</div>
-            <input id = "email" placeholder = "user@email.com.." type = "text"/>
+        <div className="col-sm-3 col-centered">
+        <h1> Alright mate login will ya </h1><br />
+          <div className="input-group mb-3">
+            <div className="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-large">Email</span></div>
+            <input id = "email" placeholder = "user@email.com.." type = "text" class="form-control"/>
           </div>
-          <div>
-            <div>Password</div>
-            <input id = "password" placeholder = "***********" type = "text"/>
+          <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-large">Password</span></div>
+            <input id = "password" placeholder = "***********" type = "password" class="form-control"/>
           </div>
-          <button style = {{margin : '10px'}} onClick = {this.login}>Login</button>
-          <button style = {{margin : '10px'}} onClick = {this.register}>Register</button>
+          <button style = {{margin : '10px'}} onClick = {this.login} class="btn btn-primary">Login</button>
+          <button style = {{margin : '10px'}} onClick = {this.register} class="btn btn-default">Register</button>
+        </div>
         </div>
     )
   }
 }
 
 export default Login;
-
