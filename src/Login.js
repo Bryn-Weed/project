@@ -40,7 +40,7 @@ class Login extends React.Component{
       <div style={{ textAlign : 'center' }}>
         <div className="col-lg-2 col-centered">
           <form>
-            <h1 style={{float: 'left', marginBottom: '25px'}}>Sign in</h1>
+            <h1 style={{float: 'left', marginBottom: '25px'}}>Welcome!</h1>
 
             <div className="input-group mb-3" >
               <div className="input-group-prepend">
@@ -57,7 +57,7 @@ class Login extends React.Component{
             </div>
 
             <button style = {{margin : '10px', fontSize: '15px'}} onClick = {this.register} className="btn btn-dark btn float-right">Sign Up</button>
-            <button style = {{margin : '10px', fontSize: '15px'}} onClick = {this.login} className="btn btn-primary btn float-right">Sign In</button>
+            <button style = {{margin : '10px', fontSize: '15px'}} onClick = {this.login} className="btn btn-primary btn float-right">Log In</button>
 
           </form>
         </div>
