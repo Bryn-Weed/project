@@ -36,23 +36,33 @@ class Login extends React.Component{
 
   render(){
     return(
-        <div style={{ textAlign : 'center' }}>
-        <div className="col-sm-3 col-centered">
-        <h1> Alright mate login will ya </h1><br />
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-large">Email</span></div>
-            <input id = "email" placeholder = "user@email.com.." type = "text" class="form-control"/>
-          </div>
-          <div class="input-group mb-3">
-          <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-large">Password</span></div>
-            <input id = "password" placeholder = "***********" type = "password" class="form-control"/>
-          </div>
-          <button style = {{margin : '10px'}} onClick = {this.login} class="btn btn-primary">Login</button>
-          <button style = {{margin : '10px'}} onClick = {this.register} class="btn btn-default">Register</button>
+    <div className="background">
+      <div style={{ textAlign : 'center' }}>
+        <div className="col-lg-2 col-centered">
+          <form>
+            <h1 style={{float: 'left', marginBottom: '25px'}}>Sign in</h1>
+
+            <div className="input-group mb-3" >
+              <div className="input-group-prepend">
+                <span className="glyphicon glyphicon-user input-group-text" aria-hidden="true" id="icon" style={{fontSize: '15px', top: '0px'}}></span>
+              </div>
+              <input id="email" placeholder="email" type="text" style={{fontSize: '15px'}} className="form-control"/>
+            </div>
+
+            <div className="input-group mb-3">
+              <div className="input-group-prepend">
+                <span className="glyphicon glyphicon-lock input-group-text" aria-hidden="true" id="icon" style={{fontSize: '15px', top: '0px'}}></span>
+              </div>
+              <input id="password" placeholder="password" type="password" style={{fontSize: '15px'}} className="form-control"/>
+            </div>
+
+            <button style = {{margin : '10px', fontSize: '15px'}} onClick = {this.register} className="btn btn-dark btn float-right">Sign Up</button>
+            <button style = {{margin : '10px', fontSize: '15px'}} onClick = {this.login} className="btn btn-primary btn float-right">Sign In</button>
+
+          </form>
         </div>
-        </div>
+      </div>
+    </div>
     )
   }
 }
