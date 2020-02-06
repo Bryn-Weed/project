@@ -322,12 +322,16 @@ code {
 .col-centered{
   float: none;
   margin: 0 auto;
+
+}
+
+.login-card{
   margin-top: 20rem;
-  background-color: red;
   display: inline-block;
   padding: 25px;
   background-color: rgba(0,0,0,0.5);
   color: white;
+
 }
 
 .background{
